@@ -2,10 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Coin Exercise</title>
+    <title>Coins Exercise</title>
 </head>
 <body>
 
- <script src="coins.js"></script>
+<!-- Note: Default behavior of forms is to reset/reload the page; you need to prevent default in JS or use something other than a form -->
+
+<form id="coinCounter" action="">
+	<fieldset>
+		<legend>Coin Counter</legend>
+			<p>
+				<label>Enter Amount Here:</label>
+				<input type="text" id="amtToCalc">
+				<button id="calcButton">Count my Coins!</button>
+			</p>
+	</fieldset>
+
+	<div id="results"></div>
+
+</form>
+	<script type="text/javascript" src="coins.js"></script>
 </body>
 </html>
+
+
+
+
